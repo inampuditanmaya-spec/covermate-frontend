@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <h1>Welcome to Covermate Dasboard</h1>
-        <button
-        onclick="location.href='policies.html' ">Logout</button>
-            </body>
+<head>
+<title>Insurance Dashboard</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#f4f6f9;
+}
+
+/* TOP NAVBAR */
+.navbar{
+background:#1b4f72;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.navbar h2{
+margin:0;
+}
+
+.navbar button{
+background:white;
+color:#1b4f72;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* DASHBOARD CONTENT */
+.container{
+text-align:center;
+margin-top:50px;
+}
+
+.card{
+background:white;
+width:260px;
+padding:25px;
+margin:15px;
+border-radius:12px;
+display:inline-block;
+box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+}
+
+h3{
+color:#1b4f72;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+<h2>Insurance Assistant</h2>
+<button onclick="location.href='index.html'">Logout</button>
+</div>
+
+<div class="container">
+
+<h1>Welcome to Dashboard</h1>
+<p>Select an option below</p>
+
+<div class="card" onclick="location.href='policies.html'">
+<h3>Browse Policies</h3>
+<p>Compare and view insurance plans</p>
+</div>
+
+<div class="card">
+<h3>My Policies</h3>
+<p>View your purchased policies</p>
+</div>
+
+<div class="card">
+<h3>Claims</h3>
+<p>Track and submit claims</p>
+</div>
+
+</div>
+
+</body>
 </html>
