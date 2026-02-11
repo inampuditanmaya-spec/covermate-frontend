@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Covermate Login</title>
-        <style>
-            body{
-                font-family: Arial;
-                background:#f2f4f8;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-            login-box{
-                background: white;
-                padding:30px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.2);
-                width: 300px;
-                text-align: center;
-            }
-            input{
-                width: 100%;
-                padding: 10px;
-                margin: 10px 0;
-            }
-            button{
-                width: 100%;
-                padding: 10px;
-                background: #4CAF50;
-                color: white;
-                border: none;
-                border-radius: 5px;
-            }
-        </style>
-        </head>
-        <body>
-            <div class="login-box">
-                <h1>Covermate</h1>
-                <h3>Login</h3>
-                <input type="text" id="email" placeholder="Enter Email">
-                <input type="password" id="password" placeholder="Enter Password">
-                <button onclick="loginUser()">Login</button>
-            </div>
-        </body>
-        <script>
-            function loginUser(){
-                const email =
-                document.getElementById("email").value;
-                const password =
-                document.getElementById("password").value;
-                alert("Email: "+ email + "password: " +password);
-            }
-        </script>
+<head>
+<title>Insurance Assistant Login</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+background:rgba(255,255,255,0.95);
+padding:40px;
+width:320px;
+border-radius:15px;
+box-shadow:0px 10px 30px rgba(0,0,0,0.2);
+text-align:center;
+animation:fadeIn 0.6s ease-in-out;
+}
+
+h1{
+margin-bottom:5px;
+color:#1b4f72;
+}
+
+img{
+margin:10px 0;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+outline:none;
+font-size:14px;
+}
+
+input:focus{
+border-color:#4facfe;
+box-shadow:0 0 5px rgba(79,172,254,0.5);
+}
+
+button{
+width:100%;
+padding:12px;
+background:#1b4f72;
+border:none;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#154360;
+transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Insurance Assistant</h1>
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="80">
+
+<h3>Login</h3>
+
+<input type="text" id="email" placeholder="Enter Email">
+<input type="password" id="password" placeholder="Enter Password">
+
+<button onclick="loginUser()">Login</button>
+
+</div>
+
+<script>
+function loginUser(){
+   // Temporary redirect until backend connected
+   window.location.href="dashboard.html";
+}
+</script>
+
+</body>
 </html>
